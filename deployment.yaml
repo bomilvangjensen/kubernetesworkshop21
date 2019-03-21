@@ -60,3 +60,13 @@ spec:
   type: LoadBalancer
 status:
   loadBalancer: {}
+---
+apiVersion: v1
+data:
+  mysqlpassword.txt: MTIzYWJjCg==
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: mysqlpassword
+  selfLink: /api/v1/namespaces/default/secrets/mysqlpassword
+type: Opaque
